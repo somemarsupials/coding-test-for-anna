@@ -12,11 +12,21 @@ You will need to pull, install and build the rest of the project yourself.
 
 ## App Requirements
 
-You do not need to fulfill all the requirements. This is just to see how you would approach a problem.
+You do not need to fulfill all of the requirements. This is just to see how you would approach a problem.
 
-- Serve beers from local data using Express
-- List beers in a visually appealing way
-- Provide sorting and filtering functionality
-- Create a responsive webpage
+- I want to be able to browse local beers
+- I want to be able to search for beers and breweries
+- I want to be able to sort and filter the results
+
+## Technical Requirements
+
+- Use Git
 - Use AngularJS components where possible (filters/directives/services)
+- Create a responsive webpage
+- Use SCSS
 - Bonus points for not using Bootstrap :)
+
+## Extra Work
+
+- I want to be able to add beers to the list
+- Create some more detailed designs including extra features you would want to see
