@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$primary: #bcb;
+$primary_off: #bca;
+$accent: #8a8;
+$tertiary: #daa;
+
+body {
+  font-family: "Montserrat";
+  margin: 1em;
+  font-size: 2em;
+}
+
+h1 {
+  margin-bottom: 1em;
+  color: $tertiary;
+}
+
+
+div.searchBar {
+  background-color: $accent;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px grey solid;
+  overflow: hidden;
+
+  span {
+    margin-right: 1em;
+  }
+
+  input {
+    width: 50%;  
+    font-size: 1em;
+  }
+}
+
+div.beerList {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px grey solid;
+  padding: 0.2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead td {
+    background-color: $accent;
+    font-weight: bold;
+  }
+
+  tr {
+    background-color: $primary;
+  }
+
+  tr:nth-child(even) {
+    background-color: $primary_off;
+  }
+
+  tr:hover {
+    background-color: $tertiary;
+  }
+}
