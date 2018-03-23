@@ -1,7 +1,7 @@
 angular
   .module('beerList')
   .component('beerList', {
-    templateUrl: 'beer-list/beer-list.template.html',
+    templateUrl: 'components/beer-list/beer-list.template.html',
     controller: function($http) {
       let self = this;
 
