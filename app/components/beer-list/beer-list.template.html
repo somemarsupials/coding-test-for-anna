@@ -1,20 +1,22 @@
-<div>
-  <span>Enter a search term: </span>
-  <input ng-model="$ctrl.query" type="text" placeholder="Enter beer or brewery"/>
+<div class="beerList">
+  <div class="searchBar">
+    <span>Enter a search term: </span>
+    <input ng-model="$ctrl.query" type="text" placeholder="Enter beer or brewery"/>
+  </div>
+  <table class="beers">
+    <thead>
+      <td>Name</td>
+      <td>Brewery</td>
+      <td>ABV (%)</td>
+      <td>Score</td>
+    </thead>
+    <tbody>
+      <tr ng-repeat="beer in $ctrl.beers | beerFilter:$ctrl.query">
+        <td>{{beer.name}}</td>
+        <td>{{beer.brewery}}</td>
+        <td>{{beer.abv}}</td>
+        <td>{{beer.score}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<table>
-  <thead>
-    <td>Name</td>
-    <td>Brewery</td>
-    <td>ABV (%)</td>
-    <td>Score</td>
-  </thead>
-  <tbody>
-    <tr ng-repeat="beer in $ctrl.beers | beerFilter:$ctrl.query">
-      <td>{{beer.name}}</td>
-      <td>{{beer.brewery}}</td>
-      <td>{{beer.abv}}</td>
-      <td>{{beer.score}}</td>
-    </tr>
-  </tbody>
-</table>
