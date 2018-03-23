@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <td>Name</td>
+    <td>Brewery</td>
+    <td>ABV (%)</td>
+    <td>Score</td>
+  </thead>
+  <tbody>
+    <tr ng-repeat="beer in $ctrl.beers">
+      <td>{{beer.name}}</td>
+      <td>{{beer.brewery}}</td>
+      <td>{{beer.abv}}</td>
+      <td>{{beer.score}}</td>
+    </tr>
+  </tbody>
+</table>
