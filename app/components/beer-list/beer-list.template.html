@@ -5,13 +5,13 @@
   </div>
   <table class="beers">
     <thead>
-      <td>Name</td>
-      <td>Brewery</td>
-      <td>ABV (%)</td>
-      <td>Score</td>
+      <td ng-click="$ctrl.setSortBy('name', $event)">Name</td>
+      <td ng-click="$ctrl.setSortBy('brewery')">Brewery</td>
+      <td ng-click="$ctrl.setSortBy('abv')">ABV (%)</td>
+      <td ng-click="$ctrl.setSortBy('score')">Score</td>
     </thead>
     <tbody>
-      <tr ng-repeat="beer in $ctrl.beers | beerFilter:$ctrl.query">
+      <tr ng-repeat="beer in $ctrl.beers | beerFilter:$ctrl.query | orderBy:$ctrl.sortBy">
         <td>{{beer.name}}</td>
         <td>{{beer.brewery}}</td>
         <td>{{beer.abv}}</td>

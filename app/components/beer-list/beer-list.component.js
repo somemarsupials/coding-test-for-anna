@@ -5,6 +5,10 @@ angular
     controller: function($http) {
       let self = this;
 
+      self.setSortBy = function(column) {
+        self.sortBy = column;
+      };
+
       $http.get('/api/beers.json')
         .then(function(response) { self.beers = response.data })
         .catch(function(response) { self.beers = [] })
